@@ -1,0 +1,78 @@
+---
+name: Connor
+surname: Larson
+position: "Data Scientist"
+address: "Grand Rapids, MI"
+phone: +1.616.299.8665
+www: connorlarson
+email: "cjlarson0@gmail.com"
+twitter: no
+github: cjlarson0
+linkedin: connor.j.larson
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+```
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "B.S.E. Data Science", "2013-17", "University of Michigan", "Ann Arbor, MI",
+  "M.S. Data Science", "2019-Present", "Grand Valley State University", "Grand Rapids, MI"
+) %>% 
+  detailed_entries(what = Degree, when = Year, with = Institution, where = Where)
+```
+
+# Technical Skills
+
+```{r}
+tribble(
+  ~Skill, ~Tools, ~Curriculum,
+  "Data Analysis", "Python, R, SQL, Tableau", "Time-series analysis and trending of warehouse operations data in SQL and Tableau",
+  "Data Analysis", "Python, R, SQL, Tableau", "Classification of personal health and Kaggle competition data using SVM, Naive Bayes, Classification Trees, and Artificial Neural Networks in R and Python",
+  "Data Analysis", "Python, R, SQL, Tableau", "NLP Processing and information retrieval of work order and maintenance notes in Python",
+  "Data Analysis", "Python, R, SQL, Tableau", "Quantitative analysis of warehouse operations, game competition, and housing sales data",
+  "Data Visualization", "Tableau, R","Customer KPI-focused dashboarding using Tableau, including Time-Series analysis and overall summary statistics",
+  "Data Visualization", "Tableau, R","Exploratory dashboarding of school, video game, and Kaggle competition data using Tableau and R",
+  "Data Visualization", "Tableau, R","Continuous improvement of dashboards focused on real-time analytics and reducing processing times",
+  "Data Engineering", "SQL, SSIS, Python, .NET","Curation of SQL queries for extraction of data from databases and aggregation for analysis",
+  "Data Engineering", "SQL, SSIS, Python, .NET","Creation of data transformation processes thorugh Microsoft SQL Server Integration Services and .NET programming",
+  "Data Engineering", "SQL, SSIS, Python, .NET","Data manipulation and cleansing using python",
+  "Data Engineering", "SQL, SSIS, Python, .NET","Database management via table, index, stored procedure, and view administration"
+) %>%
+  detailed_entries(with = Skill,what = Tools, why = Curriculum)
+
+
+
+```
+
+
+# Nobel Prizes
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc,
+  1903, "Physics", "Awarded for her work on radioactivity with Pierre Curie and Henri Becquerel",
+  1911, "Chemistry", "Awarded for the discovery of radium and polonium"
+) %>% 
+  brief_entries(
+    glue::glue("Nobel Prize in {Type}"),
+    Year, 
+    Desc
+  )
+```
+
+# Publications
+
+```{r}
+
+```
+
