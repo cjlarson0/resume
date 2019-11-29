@@ -4,11 +4,12 @@ surname: Larson
 position: "Data Scientist"
 address: "Grand Rapids, MI"
 phone: +1.616.299.8665
-www: connorlarson
+#www: connorlarson
 email: "cjlarson0@gmail.com"
 twitter: no
-github: cjlarson0
-linkedin: connor.j.larson
+github: "cjlarson0"
+#linkedin: connor.j.larson
+docname: "resume"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::awesomecv
 ---
@@ -55,24 +56,25 @@ tribble(
 ```
 
 
-# Nobel Prizes
+# Work Experience
 
 ```{r}
 tribble(
-  ~Year, ~Type, ~Desc,
-  1903, "Physics", "Awarded for her work on radioactivity with Pierre Curie and Henri Becquerel",
-  1911, "Chemistry", "Awarded for the discovery of radium and polonium"
-) %>% 
-  brief_entries(
-    glue::glue("Nobel Prize in {Type}"),
-    Year, 
-    Desc
-  )
+  ~Company, ~When, ~Where, ~Role, ~Why,
+  "Dematic North America", "May 2017 - Present", "Grand Rapids, MI" ,"Analytics Engineer 2", "Focus on customer-facing projects, delivering process improvement based analytics solutions",
+  "Dematic North America", "May 2017 - Present", "Grand Rapids, MI" , "Analytics Engineer 2", "Delivered IoT Sensor Time-Series Analysis dashboarding and anomaly detection",
+  "Dematic North America", "May 2017 - Present", "Grand Rapids, MI" , "Analytics Engineer 2", "Developed operational dashboards based on warehouse throughput and operator rates",
+  "Spectrum Health", "May 2016 - August 2016", "Grand Rapids, MI" , "Software Development Intern", "Data mangement, analysis and remediation duplicates in healthcare provider databases",
+  "Spectrum Health", "May 2016 - August 2016" , "Grand Rapids, MI", "Software Development Intern", "Scanned internal applications for software security flaws and advised remedies to security issues"
+) %>%
+  detailed_entries(with = Company, what = Role, where = Where, why = Why, when = When)
 ```
 
-# Publications
+# Public Portfolio
 
-```{r}
 
-```
+## Kaggle - https://www.kaggle.com/cjlarson
+- Participation in online data science competitions and analysis
 
+## Tableau Public - https://public.tableau.com/profile/connor7763#!/
+- Visualization of data of personal interest
