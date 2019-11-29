@@ -9,7 +9,7 @@ email: "cjlarson0@gmail.com"
 twitter: no
 github: "cjlarson0"
 #linkedin: connor.j.larson
-docname: "resume"
+docname: "resume created in r"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::awesomecv
 ---
