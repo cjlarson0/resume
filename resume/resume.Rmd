@@ -1,14 +1,13 @@
 ---
 name: Connor
 surname: Larson
-position: "Data Scientist"
+position: "Product Data Analyst"
 address: "Grand Rapids, MI"
 phone: +1.616.299.8665
-#www: connorlarson
+#www: "https://cjlarson0.netlify.app/"
 email: "cjlarson0@gmail.com"
-twitter: no
 github: "cjlarson0"
-#linkedin: connor.j.larson
+linkedin: "connorjlarson"
 docname: "resume created in r"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::awesomecv
@@ -18,36 +17,84 @@ output: vitae::awesomecv
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 library(tidyverse)
+library(tibble)
 ```
 
-# Education
+# Work Experience
 
 ```{r}
-library(tibble)
+
+h1 <- "Dematic North America"
+s1 <- "May 2017 - Present"
+t1 <- "Data Analytics Engineer"
+h2 <- "Spectrum Health"
+s2 <- "May 2016 - August 2016"
+t2 <- "Software Development Intern"
+w1 <- "Grand Rapids, MI"
+
+
 tribble(
-  ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "B.S.E. Data Science", "2013-17", "University of Michigan", "Ann Arbor, MI",
-  "M.S. Data Science", "2019-Present", "Grand Valley State University", "Grand Rapids, MI"
-) %>% 
-  detailed_entries(what = Degree, when = Year, with = Institution, where = Where)
+  ~Company, ~When, ~Where, ~Role, ~Why,
+  h1, s1, w1 , t1, "Focus on customer-facing projects, delivering process improvement based analytics solutions. Produced dashboards and analytical solutions in order to support suggested improvements to customer warehouse systems.",
+  
+  h1, s1, w1 , t1, "Developed real-time dashboards based on warehouse throughput and operator rates that analyze warehouse systems to determine if there are bottlenecks, system health failures, and other areas to provide recommendations for improvements of operations.",
+  
+  h1, s1, w1 , t1, "Led customer relations in delivery of analytics solutions including training for use of solutions and iterative improvements based on customer feedback.",
+  
+  h1, s1, w1 , t1, "Worked with customers and key internal stakeholders to define, implement, and deliver solutions to solve new problems.",
+  
+  h1, s1, w1 , t1, "Created process improvements and development time reductions by standardizing data pipelines and solutions.",
+  
+  h1, s1, w1 , t1, "Delivered IoT Sensor Time-Series Analysis dashboarding and anomaly detection. Focused on finding anomalous sensors and sections of data for predictive maintenance.",
+  
+  h2, s2, w1 , t2, "Data management, analysis and remediation duplicates in healthcare provider databases. Looked for and determined if there were issues in databases or health care provider data.",
+  
+  h2, s2, w1 , t2, "Scanned internal applications for software security flaws and advised remedies to security issues"
+) %>%
+  
+  detailed_entries(with = Company, what = Role, where = Where, why = Why, when = When)
 ```
+
+
+
 
 # Technical Skills
 
 ```{r}
+
+h1 <- "Data Analysis"
+s1 <- "Python, R, SQL, Tableau"
+h2 <- "Data Visualization"
+s2 <- "Tableau, R"
+h3 <- "Data Engineering"
+s3 <- "SQL, SSIS, Python, .NET, C++"
+
 tribble(
   ~Skill, ~Tools, ~Curriculum,
-  "Data Analysis", "Python, R, SQL, Tableau", "Time-series analysis and trending of warehouse operations data in SQL and Tableau",
-  "Data Analysis", "Python, R, SQL, Tableau", "Classification of personal health and Kaggle competition data using SVM, Naive Bayes, Classification Trees, and Artificial Neural Networks in R and Python",
-  "Data Analysis", "Python, R, SQL, Tableau", "NLP Processing and information retrieval of work order and maintenance notes in Python",
-  "Data Analysis", "Python, R, SQL, Tableau", "Quantitative analysis of warehouse operations, game competition, and housing sales data",
-  "Data Visualization", "Tableau, R","Customer KPI-focused dashboarding using Tableau, including Time-Series analysis and overall summary statistics",
-  "Data Visualization", "Tableau, R","Exploratory dashboarding of school, video game, and Kaggle competition data using Tableau and R",
-  "Data Visualization", "Tableau, R","Continuous improvement of dashboards focused on real-time analytics and reducing processing times",
-  "Data Engineering", "SQL, SSIS, Python, .NET","Curation of SQL queries for extraction of data from databases and aggregation for analysis",
-  "Data Engineering", "SQL, SSIS, Python, .NET","Creation of data transformation processes thorugh Microsoft SQL Server Integration Services and .NET programming",
-  "Data Engineering", "SQL, SSIS, Python, .NET","Data manipulation and cleansing using python",
-  "Data Engineering", "SQL, SSIS, Python, .NET","Database management via table, index, stored procedure, and view administration"
+  h1 , s1, "Time-series analysis and trending of warehouse operations data in SQL and Tableau to create process improvements in the warehouse system", 
+  
+  h1, s1, "Classification of personal health and Kaggle competition data using SVM, Naive Bayes, Classification Trees, and Artificial Neural Networks in R and Python",
+  
+  h1, s1, "NLP Processing and information retrieval of work order and maintenance notes in Python to understand common maintenance issues and performance",
+  
+  h1, s1, "Quantitative and regression analysis of warehouse operations, game competition, Craiglist car sales, and housing sales data",
+  
+  h2, s2, "Customer KPI-focused dashboarding using Tableau, including Time-Series analysis and overall summary statistics developed with a focus on visualizing actionable data for warehouse improvements",
+  
+  h2, s2, "Exploratory dashboarding of school, video game, and Kaggle competition data using Tableau and R. Designed for information learning and exploratory data analysis",
+  
+  h2, s2, "Continuous improvement of dashboard processing, focused on real-time analytics and reducing processing time by offloading performance from data visualization engines",
+  
+  h3, s3, "Development of complex SQL queries for extraction of data from multiple databases and aggregation for analysis",
+  
+  h3, s3, "Creation of data transformation processes thorugh Microsoft SQL Server Integration Services, .NET programming, and Powershell scripting",
+  
+  h3, s3, "Data manipulation and cleansing using Python in order to enrich data with feature engineering and duplicate reduction",
+  
+  h3, s3, "SQL Server database management via table, index, stored procedure, and view administration",
+  
+  h3, s3, "Development of high-performance computing systems to make use of new computing paradigms such as parallel programming, GPU computing, clustered and cloud computing"
+  
 ) %>%
   detailed_entries(with = Skill,what = Tools, why = Curriculum)
 
@@ -56,25 +103,29 @@ tribble(
 ```
 
 
-# Work Experience
+
+
+# Education
 
 ```{r}
 tribble(
-  ~Company, ~When, ~Where, ~Role, ~Why,
-  "Dematic North America", "May 2017 - Present", "Grand Rapids, MI" ,"Analytics Engineer 2", "Focus on customer-facing projects, delivering process improvement based analytics solutions",
-  "Dematic North America", "May 2017 - Present", "Grand Rapids, MI" , "Analytics Engineer 2", "Delivered IoT Sensor Time-Series Analysis dashboarding and anomaly detection",
-  "Dematic North America", "May 2017 - Present", "Grand Rapids, MI" , "Analytics Engineer 2", "Developed operational dashboards based on warehouse throughput and operator rates",
-  "Spectrum Health", "May 2016 - August 2016", "Grand Rapids, MI" , "Software Development Intern", "Data mangement, analysis and remediation duplicates in healthcare provider databases",
-  "Spectrum Health", "May 2016 - August 2016" , "Grand Rapids, MI", "Software Development Intern", "Scanned internal applications for software security flaws and advised remedies to security issues"
-) %>%
-  detailed_entries(with = Company, what = Role, where = Where, why = Why, when = When)
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "B.S.E. Data Science", "2013-17", "University of Michigan", "Ann Arbor, MI", 
+  "M.S. Data Science", "2019-Present", "Grand Valley State University", "Grand Rapids, MI"
+) %>% 
+  detailed_entries(what = Degree, when = Year, with = Institution, where = Where)
 ```
 
 # Public Portfolio
 
+```{r}
 
-## Kaggle - https://www.kaggle.com/cjlarson
-- Participation in online data science competitions and analysis
-
-## Tableau Public - https://public.tableau.com/profile/connor7763#!/
-- Visualization of data of personal interest
+tribble(
+  ~site, ~url, ~info,
+  "Kaggle", "https://www.kaggle.com/cjlarson","Participation in online data science competitions and analysis",
+  "Tableau Public", "https://public.tableau.com/profile/connor7763#!/","Visualization of data of personal interest"
+  
+) %>%
+  
+  detailed_entries(with = site, what = url, why = info)
+```
