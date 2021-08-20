@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.17)  21 DEC 2020 23:05
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.17)  19 AUG 2021 21:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1070,31 +1070,31 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
 (Font)              scaled to size 16.0pt on input line 128.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 138.
+(Font)              scaled to size 10.0pt on input line 139.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 138.
+(Font)              scaled to size 10.0pt on input line 139.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 138.
+(Font)              scaled to size 9.0pt on input line 139.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sl' in size <9> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(1)/m/it' tried instead on inpu
-t line 138.
+t line 139.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 138.
+(Font)              scaled to size 9.0pt on input line 139.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 9.5pt on input line 138.
+(Font)              scaled to size 9.5pt on input line 139.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 9.5pt on input line 138.
+(Font)              scaled to size 9.5pt on input line 139.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 138.
+(Font)              scaled to size 8.0pt on input line 139.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sl' in size <8> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(1)/m/it' tried instead on inpu
-t line 138.
+t line 139.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 138.
+(Font)              scaled to size 8.0pt on input line 139.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 175.
+(Font)              scaled to size 8.0pt on input line 177.
 [1
 
 ] [2] (./resume.aux)
@@ -1104,7 +1104,7 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Here is how much of TeX's memory you used:
  31620 strings out of 479426
  628564 string characters out of 5879319
- 1098524 words of memory out of 5000000
+ 1099524 words of memory out of 5000000
  50451 multiletter control sequences out of 15000+600000
  538316 words of font info for 109 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191

@@ -35,9 +35,12 @@ w1 <- "Grand Rapids, MI"
 
 tribble(
   ~Company, ~When, ~Where, ~Role, ~Why,
-  h1, s1, w1 , t1, "Focus on customer-facing projects, delivering process improvement based analytics solutions. Produced dashboards and analytical solutions in order to support suggested improvements to customer warehouse systems.",
+  h1, s1, w1 , t1, "Produced dashboards and analytical solutions in order to support suggested improvements to customer warehouse systems with a focus on customer-facing projects, delivering process improvement based analytics solutions.",
   
-  h1, s1, w1 , t1, "Developed real-time dashboards based on warehouse throughput and operator rates that analyze warehouse systems to determine if there are bottlenecks, system health failures, and other areas to provide recommendations for improvements of operations.",
+  h1, s1, w1 , t1, "Developed dashboards and data feeds based on warehouse throughput and operator rates that analyze warehouse systems to determine if there are bottlenecks, system health failures, and other areas to provide recommendations for improvements of operations.",
+  
+  
+  h1, s1, w1 , t1, "Designed and architected new analytics products based on industry-wide warehousing and equipment efficiency metrics.",
   
   h1, s1, w1 , t1, "Led customer relations in delivery of analytics solutions including training for use of solutions and iterative improvements based on customer feedback.",
   
@@ -85,7 +88,9 @@ tribble(
   
   h2, s2, "Continuous improvement of dashboard processing, focused on real-time analytics and reducing processing time by offloading performance from data visualization engines",
   
-  h3, s3, "Development of complex SQL queries for extraction of data from multiple databases and aggregation for analysis",
+  h3, s3, "Architection of data pipelines for standard and non-standard solutions based on customer needs and industry trends",
+  
+    h3, s3, "Development of complex SQL queries for extraction of data from multiple databases and aggregation for analysis",
   
   h3, s3, "Creation of data transformation processes thorugh Microsoft SQL Server Integration Services, .NET programming, and Powershell scripting",
   
@@ -93,7 +98,7 @@ tribble(
   
   h3, s3, "SQL Server database management via table, index, stored procedure, and view administration",
   
-  h3, s3, "Development of high-performance computing systems to make use of new computing paradigms such as parallel programming, GPU computing, clustered and cloud computing"
+  h3, s3, "Development of high-performance computing systems such as parallel programming, GPU computing, clustered and cloud computing"
   
 ) %>%
   detailed_entries(with = Skill,what = Tools, why = Curriculum)
@@ -123,7 +128,8 @@ tribble(
 tribble(
   ~site, ~url, ~info,
   "Kaggle", "https://www.kaggle.com/cjlarson","Participation in online data science competitions and analysis",
-  "Tableau Public", "https://public.tableau.com/profile/connor7763#!/","Visualization of data of personal interest"
+  "Tableau Public", "https://public.tableau.com/profile/connor7763#!/","Visualization of data of personal interest",
+  "Github", "https://github.com/cjlarson0","Github for school and general side project work"
   
 ) %>%
   
